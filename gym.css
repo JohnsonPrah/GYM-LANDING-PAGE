@@ -1,0 +1,1223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Poppins:wght@200;300;400;500&display=swap');
+
+
+
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+ }
+
+html{
+    scroll-behavior: smooth;
+}
+
+  body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: black;
+
+  }
+
+  section{
+    overflow-x: hidden;
+  }
+/*--------------HEADER--------------*/
+#header{
+    background-color: rgb(65, 59, 59);
+    padding:1rem 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#header .logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#header .logo span{
+    color: rgb(255, 217, 0);
+}
+#header .navbar{
+    display: inline-blck;
+}
+#header .navbar a{
+    color: white;
+    margin-right: .5rem;
+    transition: all 2s ease;
+    padding: .2rem .5rem;
+    font-size: 1.3rem;
+}
+#header .navbar a:hover{
+    color: gold;
+    text-decoration: underline;
+    border-radius: 20px;
+    background-color: rgb(160, 144, 144);
+}
+
+#header button{
+    display: none;
+    cursor: pointer;
+}
+
+.open-btn{
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+}
+
+.close-btn{
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+}
+
+
+
+
+/**
+
+/*----------------HOME--------------*/
+#home{
+    padding: 15rem 8rem 5rem;
+    background-color: white;
+    background-image: url('./images/Cal1.PNG');
+    background-position: top center;
+    background-size: cover;
+    min-height: 120vh;
+    position: relative;
+    z-index: 1;
+}
+#home::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: .8;
+}
+
+#home p{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+#home h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: bolder;
+}
+#home h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    
+}
+#home h3 span{
+    color: gold;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: .5rem;
+}
+
+#home .home-btn{
+    text-align: center;
+    background-color: transparent;
+}
+
+#home .home-btn a{
+    border: 1px solid gold;
+    padding: .7rem 1rem;
+    color: gold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*--------------ABOUT--------------*/
+#about{
+    padding: 5rem 8rem;
+    color: white;
+}
+    
+
+#about .cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+#about .cont .ryt-img{
+    overflow: hidden;
+}
+
+#about .cont .ryt-img img{
+    object-fit: contain;
+}
+
+#about h1{
+    text-align: center;
+    color: gold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+#about p{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: white;
+
+}
+
+
+
+/*----------------FEATURE--------------*/
+#features{
+    padding: 5rem 8rem;
+    overflow-y: hidden;
+}
+#features h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: gold;
+    margin-bottom: 3rem;
+}
+#features .features{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+#features .features .feat-item{
+    background-color: rgb(58, 53, 53);
+
+}
+
+#features .features .feat-item{
+width: 350px;
+cursor: pointer;
+
+}
+
+#features .features .feat-item .f-image{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;   
+}
+#features .features .feat-item .f-image img{
+    object-fit: cover;
+    height: 300px;
+    
+}
+
+#features .features .feat-item .f-details{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding:0 .5rem;
+}
+
+#features .features .feat-item .f-details h3{
+    padding: .2rem;
+    color: gold;
+    font-size: 1.2rem;
+}
+#features .features .feat-item .f-details p{
+    margin-bottom: .5rem;
+    color: white;
+    font-size: 1.1rem;
+}
+#features .features .feat-item .f-details button{
+    padding: .8rem 1.2rem;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+/*----------------PRICING--------------*/
+#pricing{
+    padding: 6rem 8rem;
+    overflow-y: hidden;
+
+}
+
+#pricing h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: gold;
+    padding: 1rem;
+}
+
+#pricing .plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+}
+
+
+#pricing .plans .plans-item{
+    background-color: rgb(43, 42, 42);
+    border-radius: 5px;  
+    transition: all 1s ease;
+}
+#pricing .plans .plans-item:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: rgb(77, 72, 72);
+    box-shadow: 5px 5px 5px rgb(27, 19, 19);
+}
+
+
+
+#pricing .plans .plans-item h3{
+    background-color: gold;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 4rem;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#pricing .plans .plans-item .lower{
+    padding: 0 4rem;
+}
+
+#pricing .plans .plans-item h4{
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    }
+
+#pricing .plans .plans-item h6{
+text-align: center;
+margin-bottom: .5rem;
+font-size: 1.2rem;
+}
+#pricing .plans .plans-item p{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    
+
+}
+#pricing .plans .plans-item p span{
+    margin-right: .7rem;
+    color: gold;
+}
+#pricing .plans .plans-item button{
+    padding: .5rem 1rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid gold;
+    margin-bottom: 1rem;
+    display: inline-block;
+    margin-left: 1rem;
+    transition: all 1s ease;
+}
+#pricing .plans .plans-item button:hover{
+    color: gold;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgb(61, 56, 56);
+}
+
+/*----------------TRAINER--------------*/
+#trainers{
+    padding: 6rem 8rem;
+    overflow-y: hidden;
+}
+#trainers h1{
+    margin-bottom: 2rem;
+    color: gold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#trainers .pt{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: .5rem;
+    cursor:pointer;
+}
+
+#trainers .pt .person:hover{
+    transform: scale(1.08);
+   
+}
+
+#trainers .pt .person{
+    width: 350px;
+    overflow: hidden;
+    background-color: rgb(63, 58, 58);
+    transition: all .8s ease;
+}
+
+
+#trainers .pt .person img{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+#trainers .pt .person .details{
+    background-color: rgb(63, 58, 58);
+    transition: all 1s ease;
+
+}
+
+
+#trainers .pt .person .details h4{
+    text-align: center;
+    color:white;
+    font-size: 1.3rem;
+    margin-bottom: .3rem;
+}
+
+#trainers .pt .person .details .handles{
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+
+#trainers .pt .person .details .handles a{
+    margin-right: .5rem;
+    color: black;
+    padding: .25rem .6rem;
+    font-size: 1.4em;
+    border-radius: 50%;
+    background-color: rgb(73, 71, 71);
+}
+
+/*----------------cto--------------*/
+
+.cto{
+    background-color: brown;
+    padding: 5rem 0;
+    height: 427px;
+    background-image: url('./images/gym9.PNG');
+    background-position: bottom center;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cto::after{
+    content: '';
+    z-index: -1;
+    background-color: black;
+    opacity: .8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.cto h6{
+    text-align: center;
+    color: gold;
+    font-size: 1.7rem;
+    margin-bottom: .7rem;
+}
+.cto h3{
+    text-align: center;
+    color: grey;
+    font-size: 3rem;
+    margin-bottom: .7rem;
+}
+.cto p{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.cto a{
+    padding: .7rem 1rem;
+    color: white;
+    background-color: gold;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 1.5;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+.cto a:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid gold;
+    color: white;
+    transform: scale(1.1);
+}
+
+/*----------------TESTIMONIALS--------------*/
+.testimonials{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 8rem;
+}
+.testimonials .testify-left h6{
+    color: gold;
+    margin-bottom: .7rem;
+    font-size: 2rem;
+}
+.testimonials .testify-left h4{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.testimonials .testify-left p{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.testimonials .testify-right{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.testimonials .testify-right .testify-items{
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 45, 45);
+    border-radius: 2px;
+    margin-right: .5rem;
+
+}
+
+
+.testimonials .testify-right .testify-items img{ 
+    width: 300px;
+    height: 150px;
+    margin-right: 2rem;
+    border-radius: 50%;
+
+}
+
+.testimonials .testify-right .testify-items h4{
+color: white;
+font-size: 1.5rem;
+margin-bottom: .7rem;
+}
+.testimonials .testify-right .testify-items h6{
+    color: gold;
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+}
+.testimonials .testify-right .testify-items p{
+    color: white;
+    font-size: 1.3rem;
+    border-top: 1px solid gold;
+}
+
+/*----------------BLOG--------------*/
+#blog{
+  padding: 1rem 8rem;
+  overflow-y: hidden;
+ 
+}
+#blog h1 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+#blog .images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    
+}
+
+#blog .images div{
+    width: 350px;
+    gap: .2rem;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+#blog .images img{
+    width: 100%;
+    object-fit: contain;
+    opacity: 0.5;
+    transition: all 1s ease;
+    
+}
+
+#blog .images div:hover img{
+    transform: scale(1.15);
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+/*----------------FOOTER--------------*/
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 5rem 8rem;
+}
+#footer section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#footer .quick-links a{
+    display: block;
+    text-decoration: none;
+    color: rgb(141, 132, 132);
+    margin-bottom: .5rem;
+}
+#footer .quick-links h4{
+    margin-bottom: .8rem;
+    color: rgb(247, 245, 245);
+
+}
+#footer .opening-hours p span{
+    color: gold;
+    margin-left: .3rem;
+}
+#footer .opening-hours h4{
+    margin-bottom: .8rem;
+    color: rgb(247, 245, 245);
+}
+#footer .opening-hours p{
+    color: rgb(141, 132, 132);
+    margin-bottom: .5rem;
+}
+#footer .contacts h4{
+    margin-bottom: .8rem;
+    color: rgb(247, 245, 245);
+}
+#footer .contacts p{
+    color: rgb(141, 132, 132);
+    margin-bottom: .5rem;
+}
+#footer .contacts p span{
+    font-size: 1rem;
+    color: gold;
+    margin-right: .3rem;
+}
+#footer .contacts div a{
+    color: white;
+    border-radius: 50%;
+    margin-left: .5rem;
+    font-size: 1.3rem;
+    padding: .2rem;
+    border-radius: 50%;
+}
+#footer .news-letter h4{
+    margin-bottom: .8rem;
+    color: rgb(247, 245, 245);
+}
+#footer .news-letter p{
+    color: rgb(141, 132, 132);
+    margin-bottom: .5rem;
+}
+#footer .news-letter input{
+    padding: .8rem .3rem;
+    width: 100%;
+    border-radius: 2px;
+}
+
+#footer .news-letter button{
+    margin-top: .5rem;
+    color: rgb(141, 132, 132);
+    background-color: gold;
+    display: block;
+    padding: .8rem 1.5rem;
+    border-radius: 2px;
+}
+
+#footer > p{
+    text-align: center;
+    margin-top: 2rem;
+}
+#footer > p span{
+    color: gold;
+}
+
+
+/*-------- MEDIA 950 --------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------ MEDIA 950-----------------*/
+@media screen and (max-width: 950px) {
+    
+
+    h1{font-size: 2.9rem;}
+    h2{font-size: 1.8rem;}
+    h3{font-size: 1.5rem;}
+    h4{font-size: 1.2rem;}
+    h5{font-size: 2rem;}
+
+    #header{
+        padding: 1rem 4rem ;
+    }
+  
+      #home{
+        padding: 23rem 8rem 2rem;
+        
+    }
+
+      #header button.close-btn{
+        display: none;
+      }
+
+    #about{
+        padding: 2.5rem 4rem;
+        color: white;
+    }
+        
+    
+    #about .cont{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1.2rem;
+    }
+    #about h1{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    #features{
+        padding: 2.5rem 4rem;
+    }
+    #features .features{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #features .features .feat-item{
+        width: 100%;
+        cursor: pointer;  
+        }
+        
+    #pricing{
+        padding: 2.5rem 4rem;
+    }
+
+    #pricing h1{
+        margin-bottom: 1.5rem;
+        padding: .5rem;
+    }
+    
+
+    #pricing .plans{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #pricing .plans .plans-item{
+        border-radius: 5px;  
+        transition: all 1s ease;
+    }
+
+    #trainers{
+        padding: 2rem 4rem;
+    }
+ 
+    #trainers .pt .person{
+       width: 100%;
+       margin-bottom: 1rem;
+    }
+    #trainers .pt{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: .1rem;
+        cursor:pointer;
+    }
+    
+    #blog{
+        padding: 1rem 1rem;
+       
+      }
+      #blog .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        
+    }
+    #blog .images div{
+        width: fit-content;
+    }
+    
+
+    
+    .testimonials{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem 4rem;
+    }
+    .testimonials .testify-left h6{
+        color: gold;
+        margin-bottom: .5rem;
+        text-align: center;
+        
+    }
+    .testimonials .testify-left h4{
+        color: white;
+        margin-bottom: .8rem;
+        
+    }
+    .testimonials .testify-left p{
+        color: white;
+        font-size: 1.4rem;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+
+    #footer{
+        background-color: black;
+        color: white;
+        padding: 2.5rem 4rem;
+    }
+    
+    #footer section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
+    }
+    
+
+    #footer .quick-links{
+        margin-bottom: 1rem;
+    }
+
+    #footer .quick-links a{
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+    #footer .quick-links h4{
+        margin-bottom: 1.4rem;
+        
+    }
+    #footer .opening-hours{
+        color: gold;
+        margin-bottom: 1rem;
+    }
+    #footer .opening-hours h4{
+        margin-bottom: 1rem;
+        
+    }
+    #footer .opening-hours p{
+        color: gold;
+        font-size: 1.7rem;
+        margin-bottom: .9rem;
+    }
+
+    #footer .contacts{
+        margin-bottom: 1.5rem;
+    }
+
+    #footer .contacts h4{
+        margin-bottom: .8rem;
+        font-size: 1.5rem;
+    }
+    #footer .contacts p{
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+
+    }
+    #footer .contacts p span{
+        font-size: 1.4rem;
+        color: gold;
+        margin-right: .5rem;
+    }
+    #footer .contacts div a{
+        font-size: 1.6rem;
+    }
+
+    #footer .news-letter p{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+
+    }
+    #footer .news-letter h4{
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+    }
+    #footer .news-letter input{
+        padding: .8rem .3rem;
+        width: 50%;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 20rem;
+        height: 100vh;
+        background-color:rgb(75, 70, 70);
+        text-align:center;
+        padding: 2rem 0;
+        display: none;
+        color: white;
+        transition: all 2s ease;
+        
+    }
+    #header .navbar a{
+        color: black;
+        display: block;
+        margin-bottom: 2.5rem;
+        font-size: 1rem;
+        transition: all 1s ease;
+        color: white;
+        transition: all 2s ease;
+     }
+     #header button{
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        
+      } 
+    #header .navbar a:hover{
+        transform: translatex(-1rem);
+        border-radius: 0;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+}
+
+
+/*-------- MEDIA 650 --------*/
+@media screen and (max-width: 650px) {
+    
+
+    h1{font-size: 2.5rem;}
+    h2{font-size: 1.6rem;}
+    h3{font-size: 1.2rem;}
+    h4{font-size: 1rem;}
+    h5{font-size: .7rem;}
+
+
+    #header{
+        padding: 1rem 1rem ;
+    }
+    #header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 20rem;
+        height: 100vh;
+        background-color:rgb(75, 70, 70);
+        text-align:center;
+        padding: 2rem 0;
+        display: none;
+        color: white;
+        transition: all 2s ease;
+        
+    }
+    #header .navbar a{
+        color: black;
+        display: block;
+        margin-bottom: 2.5rem;
+        font-size: 1rem;
+        transition: all 1s ease;
+        color: white;
+        transition: all 2s ease;
+     }
+     #header button{
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        
+      } 
+    #header .navbar a:hover{
+        transform: translatex(-1rem);
+        border-radius: 0;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+   
+  
+      #home{
+        padding: 23rem 8rem 2rem;
+        
+    }
+
+      #header button.close-btn{
+        display: none;
+      }
+
+    #about{
+        padding: 1rem 1rem;
+        color: white;
+    }
+        
+    
+    #about .cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    #about h1{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #features{
+        padding: 1rem 1rem;
+    }
+    #features .features{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #features .features .feat-item{
+        width: 100%;
+        cursor: pointer;  
+        }
+        
+    #pricing{
+        padding: 1rem 1rem;
+    }
+
+    #pricing h1{
+        margin-bottom: 1rem;
+        padding: 0rem;
+    }
+    
+
+    #pricing .plans{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    #pricing .plans .plans-item{
+        border-radius: 5px;  
+        transition: all 1s ease;
+    }
+
+    #trainers{
+        padding: 2rem 1rem;
+    }
+    #trainers .pt{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        column-gap: .5rem;
+    }
+    #trainers .pt .person{
+       width: 100%;
+       margin-bottom: 1rem;
+    }
+    ----------------------------------
+    #pricing{
+        padding: 1.5rem 1.5rem;
+    }
+
+    #pricing .plans{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #trainers{
+        padding: 1rem 1rem;
+    }
+    #trainers .pt{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    #trainers h1{
+        margin-bottom: 1rem;
+    }
+
+    #blog{
+        padding: 1rem 1rem;
+       
+      }
+      #blog .images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        
+    }
+    #blog .images div{
+        width: fit-content;
+    }
+    
+
+    
+    .testimonials{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    .testimonials .testify-left h6{
+        color: gold;
+        margin-bottom: .5rem;
+        text-align: center;
+        
+    }
+    .testimonials .testify-left h4{
+        color: white;
+        margin-bottom: .8rem;
+        
+    }
+    .testimonials .testify-left p{
+        color: white;
+        font-size: 1.4rem;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+
+    #footer{
+        background-color: black;
+        color: white;
+        padding: 1rem 1rem;
+    }
+    
+    #footer section{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    
+
+    #footer .quick-links{
+        margin-bottom: 1rem;
+    }
+
+    #footer .quick-links a{
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+    #footer .quick-links h4{
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+    }
+    #footer .opening-hours{
+        color: gold;
+        margin-bottom: 1rem;
+    }
+    #footer .opening-hours h4{
+        margin-bottom: .8rem;
+        font-size: 1.5rem;
+    }
+    #footer .opening-hours p{
+        color: gold;
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+
+    #footer .contacts{
+        margin-bottom: 1.5rem;
+    }
+
+    #footer .contacts h4{
+        margin-bottom: .8rem;
+        font-size: 1.5rem;
+    }
+    #footer .contacts p{
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+
+    }
+    #footer .contacts p span{
+        font-size: 1.4rem;
+        color: gold;
+        margin-right: .5rem;
+    }
+    #footer .contacts div a{
+        font-size: 1.6rem;
+    }
+
+    #footer .news-letter p{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+
+    }
+    #footer .news-letter h4{
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+    }
+    #footer .news-letter input{
+        padding: .8rem .3rem;
+        width: 50%;
+        border-radius: 2px;
+    }
+}
